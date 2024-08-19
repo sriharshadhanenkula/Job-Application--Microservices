@@ -1,12 +1,14 @@
 package com.sriharsha.jobms.job;
 
+import com.sriharsha.jobms.job.dto.JobDTO;
+
 import java.util.List;
 
 public interface JobService {
 
-    List<Job> findAll();
+    List<JobDTO> findAll();
     void createJob(Job job);
-    Job getJobById(Long id);
+    JobDTO getJobById(Long id);
 
     boolean deleteJobById(Long id);
 
